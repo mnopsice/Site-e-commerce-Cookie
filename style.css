@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body{
+    color: #F2E6D1;
+}
+
+header{
+    background-color: #E0D0B3;
+}
+
+
+
+header ul{
+    font-family: 'Overlock', sans-serif;
+    color: #3F54BE;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* code css footer */
+#footer-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transform: translateY(50%);
+}
+
+#footer-liens {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #3F54BE;
+    font-family: 'Comic Neue', cursive;
+}
+
+li {
+    list-style: none;
+}
+
+#footer-liens a {
+    color: #F2E6D1;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #3F54BE;
+    color: #F2E6D1;
+    padding: 10px;
+    font-family: 'Comic Neue', cursive;
+}
+/* fin code css footer */
+
+
+/* Ajout de la règle CSS pour les écrans de tablette */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Ajout de la règle CSS pour les écrans d'ordinateur */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    #footer-liens {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #3F54BE;
+    }
+}
