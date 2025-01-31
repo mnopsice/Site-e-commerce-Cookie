@@ -1,28 +1,190 @@
+/* Styles par défaut pour mobile first */
+
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
 
 body{
-    color: #F2E6D1;
+    background-color: #f2e6d160;
 }
 
-header{
+/* code css header */
+header {
     background-color: #E0D0B3;
+    padding: 10px 20px;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+header .main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
-header ul{
+header .logo {
+    display: none;
+}
+
+header .right-section {
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    padding: 10px;
+}
+
+#login { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3F54BE;
+    font-size: 20px; 
+    padding: 10px;
+    font-family: 'Comic Neue', cursive;
+}
+
+#panier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3F54BE;
+    padding: 10px;
+    padding-right: -30px;
+    font-family: 'Comic Neue', cursive;
+    height: 70%;
+    width: 70%;
+}
+
+header ul {
     font-family: 'Overlock', sans-serif;
     color: #3F54BE;
     font-size: 30px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
+.menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #3F54BE;
+}
 
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 75%; /* Prendre les trois quarts de l'écran */
+    height: 100%;
+    background-color: #3F54BE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
 
+.nav-links.active {
+    display: flex;
+}
 
+.nav-links li {
+    text-align: left;
+    padding: 10px 0;
+    width: 100%;
+}
 
+.close-icon {
+    align-self: flex-start;
+    font-size: 30px;
+    cursor: pointer;
+}
 
+#logo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    padding: 10px;
+    transform: translateY(-60%);
+}
 
+#nom-de-la-marque {
+    font-family: 'Overlock', sans-serif;
+    color: #3F54BE;
+    font-size: 30px;
+    margin-top: 10px;
+}
 
+/* fin code css header */
+
+/* code css page histoire */
+
+#titre-histoire {
+    display: flex;
+    justify-content: center;
+    font-family: 'overlock', sans-serif;
+    color: #3F54BE;
+    font-size: 40px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#paragraphe-histoire {
+    font-family: 'Comic Neue', cursive;
+    color: #3F54BE;
+    font-size: 20px;
+    padding: 10px;
+    order: 1;
+}
+
+#image-histoire img {
+    width: 231px;
+    height: 224px;
+}
+/* fin code page histoire */
+
+/*début css boutique*/
+@media screen and (min-width: 640px) {
+    .produits-grid-container{
+        display: grid;
+        justify-content: space-around;
+    
+        grid-template : 35% 35% 35% / 35% 35% 35%;
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .produit-item{
+        align-items: center;
+    }
+    
+    .image-produit{
+        min-width: 100px;
+        min-height: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+/*fin css boutique*/
 
 /* code css footer */
 #footer-logo {
@@ -32,7 +194,7 @@ header ul{
     transform: translateY(50%);
 }
 
-#footer-liens {
+#footer-liens-id {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -44,7 +206,7 @@ li {
     list-style: none;
 }
 
-#footer-liens a {
+.footer-liens {
     color: #F2E6D1;
     text-decoration: none;
 }
@@ -64,18 +226,159 @@ li {
     body {
         font-size: 18px;
     }
+
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav-links li {
+        padding: 0;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .right-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-section ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-section ul li {
+        margin: 0 10px;
+    }
+
+    .close-icon {
+        display: none; /* Masquer la croix de fermeture en mode tablette */
+    }
+
+    /* code css page histoire pour tablette*/
+
+    #titre-histoire {
+        font-size: 60px;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    #image-histoire img {
+        height: 100%;
+           width: 100%;
+    }
+
+    #paragraphe-histoire {
+        order: 0;
+        font-size: 40px;
+        width: 50%;
+        height: 100%;
+        margin-left: 100px;
+    }
 }
 
 /* Ajout de la règle CSS pour les écrans d'ordinateur */
 @media (min-width: 1024px) {
+
     body {
         font-size: 20px;
     }
 
-    #footer-liens {
+    .liens{
+        text-decoration: none;
+        color: #3F54BE;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
         display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        background-color: #3F54BE;
+        justify-content: space-between;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav-links .left-links {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .nav-links .right-links {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .right-section {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .right-section ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .right-section ul li {
+        margin: 0 10px;
+    }
+
+    .close-icon {
+        display: none; /* Masquer la croix de fermeture en mode PC */
+    }
+
+    /* code css page histoire pour ordinateur */
+
+    #titre-histoire {
+        font-size: 60px;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    #image-histoire img {
+        height: 100%;
+           width: 100%;
+    }
+
+    #paragraphe-histoire {
+        order: 0;
+        font-size: 40px;
+        width: 50%;
+        height: 100%;
+        margin-left: 100px;
     }
 }
