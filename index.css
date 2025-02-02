@@ -164,6 +164,10 @@ button.bouton-boutique a{
 
 }
 
+#assortiment-index{
+    padding: 10px;
+}
+
   @media (min-width: 768px) {
     .produits-grid-container {
       grid-template-columns: repeat(3, 1fr);

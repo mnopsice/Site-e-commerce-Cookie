@@ -98,7 +98,7 @@ header .right-section {
     color: #3F54BE;
     font-size: 1.25em; 
     padding: 10px;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', sans-serif;
 }
 
 #panier {
@@ -109,7 +109,7 @@ header .right-section {
     color: #3F54BE;
     padding: 10px;
     padding-right: -30px;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', sans-serif;
     height: 7vh;
     width: 7vh;
 }
@@ -153,8 +153,24 @@ h2 {
     font-weight: 700;
 }
 
+h3{
+    text-align: center;
+    font-family: 'Overlock', sans-serif;
+    font-weight: 700;
+    color: #3F54BE;
+    font-size: 1.2em;
+}
+p{
+    text-align: center;
+    font-family: 'Comic Neue', sans-serif;
+    font-weight: 400;
+    color: #3F54BE;
+    font-size: 1em;
+}
+
+
 hr {
-    border: 1px solid #3F54BE;
+    border: 1px solid #967D84;
     margin: 5vh 5vh;
     opacity: 1; /* Assure que le séparateur soit opaque */
 }
