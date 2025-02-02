@@ -91,9 +91,6 @@ header ul li a {
 header .right-section {
     display: flex;
     align-items: center;
-    position: absolute; 
-    top: 0; 
-    right: 0; 
     padding: 10px;
 }
 
@@ -103,7 +100,7 @@ header .right-section {
     align-items: center;
     text-decoration: none;
     color: #3F54BE;
-    font-size: 20px; 
+    font-size: 1.25em; 
     padding: 10px;
     font-family: 'Comic Neue', cursive;
 }
@@ -117,8 +114,8 @@ header .right-section {
     padding: 10px;
     padding-right: -30px;
     font-family: 'Comic Neue', cursive;
-    height: 70%;
-    width: 70%;
+    height: 7vh;
+    width: 7vh;
 }
 
 
@@ -142,16 +139,16 @@ header .right-section {
 
 h1 {
     font-family: 'Overlock', sans-serif;
-    font-size: 34px;
+    font-size: 2.125em; /* 34px to em */
     color: #3F54BE;
     text-align: left;
     margin-left: 5vh;
     margin-top: 5vh;
 }
 
-h2{ 
+h2 { 
     font-family: 'Overlock', sans-serif;
-    font-size: 28px ;
+    font-size: 1.75em; /* 28px to em */
     color: #3F54BE;
     text-align: left;
     margin-left: 7vh;
@@ -187,7 +184,6 @@ li {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -307,13 +303,5 @@ li {
         display: none; /* Masquer la croix de fermeture en mode PC */
     }
 
-    #footer-liens-id {
-        display: flex;
-        padding: 10px;
-        background-color: #3F54BE;
-    }
 
-    #ul-3 {
-        margin-left: 10px;
-    }   
 }
