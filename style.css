@@ -13,6 +13,7 @@ header {
     padding: 10px 20px;
 }
 
+/* début code nav bar */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -30,39 +31,6 @@ header .logo {
     display: none;
 }
 
-header .right-section {
-    display: flex;
-    align-items: center;
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    padding: 10px;
-}
-
-#login { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #3F54BE;
-    font-size: 20px; 
-    padding: 10px;
-    font-family: 'Comic Neue', cursive;
-}
-
-#panier {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #3F54BE;
-    padding: 10px;
-    padding-right: -30px;
-    font-family: 'Comic Neue', cursive;
-    height: 70%;
-    width: 70%;
-}
-
 header ul {
     font-family: 'Overlock', sans-serif;
     color: #3F54BE;
@@ -72,6 +40,15 @@ header ul {
     padding: 0;
     margin: 0;
     display: flex;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none; /* Enlever la décoration des liens */
+    color: inherit; /* Utiliser la couleur héritée */
 }
 
 .menu-icon {
@@ -109,6 +86,41 @@ header ul {
     font-size: 30px;
     cursor: pointer;
 }
+/*fin code nav bar */
+
+header .right-section {
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    padding: 10px;
+}
+
+#login { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3F54BE;
+    font-size: 20px; 
+    padding: 10px;
+    font-family: 'Comic Neue', cursive;
+}
+
+#panier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3F54BE;
+    padding: 10px;
+    padding-right: -30px;
+    font-family: 'Comic Neue', cursive;
+    height: 70%;
+    width: 70%;
+}
+
 
 #logo-header {
     display: flex;
@@ -128,63 +140,19 @@ header ul {
 
 /* fin code css header */
 
-/* code css page histoire */
-
-#titre-histoire {
-    display: flex;
-    justify-content: center;
-    font-family: 'overlock', sans-serif;
+h1 {
+    font-family: 'Overlock', sans-serif;
     color: #3F54BE;
-    font-size: 40px;
-    padding: 10px;
-    margin: 30px;
+    text-align: left;
+    margin-left: 5vh;
+    margin-top: 5vh;
 }
 
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+hr {
+    border: 1px solid #3F54BE;
+    margin: 5vh 5vh;
+    opacity: 1; /* Assure que le séparateur soit opaque */
 }
-
-#paragraphe-histoire {
-    font-family: 'Comic Neue', cursive;
-    color: #3F54BE;
-    font-size: 20px;
-    padding: 10px;
-    order: 1;
-}
-
-#image-histoire img {
-    width: 231px;
-    height: 224px;
-}
-/* fin code page histoire */
-
-/*début css boutique*/
-@media screen and (min-width: 640px) {
-    .produits-grid-container{
-        display: grid;
-        justify-content: space-around;
-    
-        grid-template : 35% 35% 35% / 35% 35% 35%;
-        grid-row: 3;
-        grid-column: 3;
-    }
-    .produit-item{
-        align-items: center;
-    }
-    
-    .image-produit{
-        min-width: 100px;
-        min-height: 100px;
-        width: 200px;
-        height: 200px;
-    }
-
-}
-
-/*fin css boutique*/
 
 /* code css footer */
 #footer-logo {
@@ -195,8 +163,6 @@ header ul {
 }
 
 #footer-liens-id {
-    display: flex;
-    flex-direction: column;
     padding: 10px;
     background-color: #3F54BE;
     font-family: 'Comic Neue', cursive;
@@ -209,15 +175,21 @@ li {
 .footer-liens {
     color: #F2E6D1;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
 }
 
-#copyright {
+
+#Copyright {
     text-align: center;
     background-color: #3F54BE;
     color: #F2E6D1;
     padding: 10px;
     font-family: 'Comic Neue', cursive;
 }
+
+
 /* fin code css footer */
 
 
@@ -270,29 +242,14 @@ li {
         display: none; /* Masquer la croix de fermeture en mode tablette */
     }
 
-    /* code css page histoire pour tablette*/
-
-    #titre-histoire {
-        font-size: 60px;
-    }
-
-    .content-wrapper {
-        flex-direction: row;
-        align-items: flex-start;
+    .footer-liens {
+        color: #F2E6D1;
+        text-decoration: none;
+        justify-content: center;
+    
     }
     
-    #image-histoire img {
-        height: 100%;
-           width: 100%;
-    }
 
-    #paragraphe-histoire {
-        order: 0;
-        font-size: 40px;
-        width: 50%;
-        height: 100%;
-        margin-left: 100px;
-    }
 }
 
 /* Ajout de la règle CSS pour les écrans d'ordinateur */
@@ -304,32 +261,15 @@ li {
 
     .liens{
         text-decoration: none;
-        color: #3F54BE;
     }
 
     .menu-icon {
         display: none;
     }
 
-    .nav-links {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-    }
-
-    .nav-links .left-links {
-        display: flex;
-        justify-content: flex-start;
-        flex: 1;
-    }
-
-    .nav-links .right-links {
-        display: flex;
-        justify-content: flex-end;
-        flex: 1;
+    .main-wrapper {
+        display: grid;
+        grid-template: 25% 25% 25% 25% / 100%;
     }
 
     .logo {
@@ -356,29 +296,5 @@ li {
 
     .close-icon {
         display: none; /* Masquer la croix de fermeture en mode PC */
-    }
-
-    /* code css page histoire pour ordinateur */
-
-    #titre-histoire {
-        font-size: 60px;
-    }
-
-    .content-wrapper {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    
-    #image-histoire img {
-        height: 100%;
-           width: 100%;
-    }
-
-    #paragraphe-histoire {
-        order: 0;
-        font-size: 40px;
-        width: 50%;
-        height: 100%;
-        margin-left: 100px;
     }
 }

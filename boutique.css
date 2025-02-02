@@ -1,0 +1,20 @@
+
+.produits-grid-container{
+    display: grid;
+    justify-content: space-around;
+    
+    grid-template : 35% 35% 35% / 35% 35% 35%;
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.produit-item{
+    align-items: center;
+}
+    
+.image-produit{
+    min-width: 100px;
+    min-height: 100px;
+    width: 200px;
+    height: 200px;
+}

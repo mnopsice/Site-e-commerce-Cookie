@@ -1,0 +1,79 @@
+#titre-histoire {
+    display: flex;
+    justify-content: center;
+    font-family: 'overlock', sans-serif;
+    color: #3F54BE;
+    font-size: 40px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#paragraphe-histoire {
+    font-family: 'Comic Neue', cursive;
+    color: #3F54BE;
+    font-size: 20px;
+    padding: 10px;
+    order: 1;
+}
+
+#image-histoire img {
+    width: 231px;
+    height: 224px;
+}
+
+/* Ajout de la règle CSS pour les écrans de tablette */
+@media (min-width: 768px) {
+    #titre-histoire {
+        font-size: 60px;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #image-histoire img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #paragraphe-histoire {
+        order: 0;
+        font-size: 40px;
+        width: 50%;
+        height: 100%;
+        margin-left: 100px;
+    }
+}
+
+/* Ajout de la règle CSS pour les écrans d'ordinateur */
+@media (min-width: 1024px) {
+    #titre-histoire {
+        font-size: 60px;
+    }
+
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #image-histoire img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #paragraphe-histoire {
+        order: 0;
+        font-size: 40px;
+        width: 50%;
+        height: 100%;
+        margin-left: 100px;
+    }
+}
