@@ -29,6 +29,13 @@ section{
     width: 200px;
     height: 200px;
 }
+
+hr{
+    border: 1px solid #967D84;
+    justify-content: center;
+    margin-top: 5vh;    
+}
+
 h2{
     text-align: center;
     font-family: 'Overlock', sans-serif;
@@ -52,7 +59,9 @@ p{
 }
 
 .assort-grid-container{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     grid-gap: 20px;
     margin: 20px;
