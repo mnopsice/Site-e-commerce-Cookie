@@ -14,11 +14,6 @@ header {
 }
 
 /* début code nav bar */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 header .main-wrapper {
     display: flex;
@@ -91,9 +86,6 @@ header ul li a {
 header .right-section {
     display: flex;
     align-items: center;
-    position: absolute; 
-    top: 0; 
-    right: 0; 
     padding: 10px;
 }
 
@@ -103,7 +95,7 @@ header .right-section {
     align-items: center;
     text-decoration: none;
     color: #3F54BE;
-    font-size: 20px; 
+    font-size: 1.25em; 
     padding: 10px;
     font-family: 'Comic Neue', cursive;
 }
@@ -117,8 +109,8 @@ header .right-section {
     padding: 10px;
     padding-right: -30px;
     font-family: 'Comic Neue', cursive;
-    height: 70%;
-    width: 70%;
+    height: 7vh;
+    width: 7vh;
 }
 
 
@@ -142,9 +134,19 @@ header .right-section {
 
 h1 {
     font-family: 'Overlock', sans-serif;
+    font-size: 2.125em; /* 34px to em */
     color: #3F54BE;
     text-align: left;
     margin-left: 5vh;
+    margin-top: 5vh;
+}
+
+h2 { 
+    font-family: 'Overlock', sans-serif;
+    font-size: 1.75em; /* 28px to em */
+    color: #3F54BE;
+    text-align: left;
+    margin-left: 7vh;
     margin-top: 5vh;
 }
 
@@ -177,7 +179,6 @@ li {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -205,14 +206,36 @@ li {
     }
 
     .nav-links {
-        display: flex;
-        flex-direction: row;
+        margin-left: 5em;
+        display: grid;
+        grid-template: 100% / 60%  30%  30%   50%   25% ;
+        justify-content: space-between;
         position: static;
         width: auto;
         height: auto;
         background-color: transparent;
         box-shadow: none;
         padding: 0;
+    }
+
+    #my-nav-boutique{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #my-nav-Histoire{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #my-nav-localisations{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #my-nav-FAQ{
+        grid-column: 5;
+        grid-row: 1;
     }
 
     .nav-links li {
@@ -242,13 +265,12 @@ li {
         display: none; /* Masquer la croix de fermeture en mode tablette */
     }
 
-    .footer-liens {
-        color: #F2E6D1;
-        text-decoration: none;
-        justify-content: center;
-    
+    #footer-liens-id {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #3F54BE;
     }
-    
 
 }
 
@@ -263,13 +285,38 @@ li {
         text-decoration: none;
     }
 
+    .nav-links {
+        margin-left: 5em;
+        display: grid;
+        grid-template: 100% / 35vh 20vh 10vh 25vh 5vh;
+    }
+
+    #my-nav-boutique{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #my-nav-Histoire{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #my-nav-localisations{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #my-nav-FAQ{
+        grid-column: 5;
+        grid-row: 1;
+    }
+
     .menu-icon {
         display: none;
     }
 
-    .main-wrapper {
-        display: grid;
-        grid-template: 25% 25% 25% 25% / 100%;
+    .right-section {
+        margin-right: 60px;
     }
 
     .logo {
@@ -280,9 +327,6 @@ li {
     .right-section {
         display: flex;
         align-items: center;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 
     .right-section ul {
@@ -297,4 +341,6 @@ li {
     .close-icon {
         display: none; /* Masquer la croix de fermeture en mode PC */
     }
+
+
 }

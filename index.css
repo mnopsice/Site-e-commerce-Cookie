@@ -4,10 +4,19 @@ body {
     padding: 0;
     margin: 0;
 }
+
+#section-carrousel{
+    background-color: #F2E6D1 ;
+    width: 100%;
+
+
+}
 /* Définition d'un container pour gérer l'affichage */
 .container {
     overflow: hidden; /* Cache les éléments qui dépassent du container */
     background-color: #F2E6D1 ;
+    height: 100vh;
+    width: 100vh;
 }
 /* Définition du carousel */
 .carousel {
@@ -20,7 +29,9 @@ body {
     /* Affiche les éléments en ligne */
     overflow: hidden;
     /* Cache les éléments qui dépassent */
-   
+    height: 100vh;
+    width: 100vh;
+    margin-left: 5em;
 }
 /* Définition des diapositives */
 .slide {
@@ -33,8 +44,6 @@ body {
 }
 /* Définition de l'affichage de l'image de chaque diapositive */
 .slide img {
-    height: 20vh;
-    width: 20vh;
     padding: 10px;
     /* Couvre tout l'espace disponible */
 }
@@ -116,13 +125,34 @@ body {
 .produits-grid-container img {
     height: 20vh;
     width: 20vh;
+    border-radius: 10px; /* Ajout des bords arrondis */
 }
 
-.bouton-boutique {
+button.bouton-boutique {
     margin-top: 5vh;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
+    background-color: #192586;
+    padding: 10px 40px 10px 40px;
+    border-radius: 50px; /* Ajout des bords arrondis */
+}
+
+button.bouton-boutique:hover {
+    background-color: #7988D2; /* Couleur de fond lors du survol */
+    border-color: #7988D2;
+}
+
+button.bouton-boutique:active {
+    background-color: #3B4CCA; /* Couleur de fond lors du clic */
+    border-color: #7988D2;
+}
+
+button.bouton-boutique a{
+    color: #F2E6D1;
+    font-size: 24px;
+    font-family: 'Comic Neue', sans-serif ;
+    text-decoration: none;
 }
 
 .image-assortiment{
