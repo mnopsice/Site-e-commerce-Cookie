@@ -14,11 +14,6 @@ header {
 }
 
 /* début code nav bar */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 header .main-wrapper {
     display: flex;
@@ -211,14 +206,36 @@ li {
     }
 
     .nav-links {
-        display: flex;
-        flex-direction: row;
+        margin-left: 5em;
+        display: grid;
+        grid-template: 100% / 60%  30%  30%   50%   25% ;
+        justify-content: space-between;
         position: static;
         width: auto;
         height: auto;
         background-color: transparent;
         box-shadow: none;
         padding: 0;
+    }
+
+    #my-nav-boutique{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #my-nav-Histoire{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #my-nav-localisations{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #my-nav-FAQ{
+        grid-column: 5;
+        grid-row: 1;
     }
 
     .nav-links li {
@@ -268,13 +285,38 @@ li {
         text-decoration: none;
     }
 
+    .nav-links {
+        margin-left: 5em;
+        display: grid;
+        grid-template: 100% / 35vh 20vh 10vh 25vh 5vh;
+    }
+
+    #my-nav-boutique{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #my-nav-Histoire{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #my-nav-localisations{
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #my-nav-FAQ{
+        grid-column: 5;
+        grid-row: 1;
+    }
+
     .menu-icon {
         display: none;
     }
 
-    .main-wrapper {
-        display: grid;
-        grid-template: 25% 25% 25% 25% / 100%;
+    .right-section {
+        margin-right: 60px;
     }
 
     .logo {
@@ -285,9 +327,6 @@ li {
     .right-section {
         display: flex;
         align-items: center;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
 
     .right-section ul {
