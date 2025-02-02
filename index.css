@@ -116,13 +116,34 @@ body {
 .produits-grid-container img {
     height: 20vh;
     width: 20vh;
+    border-radius: 10px; /* Ajout des bords arrondis */
 }
 
-.bouton-boutique {
+button.bouton-boutique {
     margin-top: 5vh;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
+    background-color: #192586;
+    padding: 10px 40px 10px 40px;
+    border-radius: 50px; /* Ajout des bords arrondis */
+}
+
+button.bouton-boutique:hover {
+    background-color: #7988D2; /* Couleur de fond lors du survol */
+    border-color: #7988D2;
+}
+
+button.bouton-boutique:active {
+    background-color: #3B4CCA; /* Couleur de fond lors du clic */
+    border-color: #7988D2;
+}
+
+button.bouton-boutique a{
+    color: #F2E6D1;
+    font-size: 24px;
+    font-family: 'Comic Neue', sans-serif ;
+    text-decoration: none;
 }
 
 .image-assortiment{

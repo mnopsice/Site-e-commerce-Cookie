@@ -142,9 +142,19 @@ header .right-section {
 
 h1 {
     font-family: 'Overlock', sans-serif;
+    font-size: 34px;
     color: #3F54BE;
     text-align: left;
     margin-left: 5vh;
+    margin-top: 5vh;
+}
+
+h2{ 
+    font-family: 'Overlock', sans-serif;
+    font-size: 28px ;
+    color: #3F54BE;
+    text-align: left;
+    margin-left: 7vh;
     margin-top: 5vh;
 }
 
@@ -242,13 +252,12 @@ li {
         display: none; /* Masquer la croix de fermeture en mode tablette */
     }
 
-    .footer-liens {
-        color: #F2E6D1;
-        text-decoration: none;
-        justify-content: center;
-    
+    #footer-liens-id {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #3F54BE;
     }
-    
 
 }
 
@@ -297,4 +306,14 @@ li {
     .close-icon {
         display: none; /* Masquer la croix de fermeture en mode PC */
     }
+
+    #footer-liens-id {
+        display: flex;
+        padding: 10px;
+        background-color: #3F54BE;
+    }
+
+    #ul-3 {
+        margin-left: 10px;
+    }   
 }
