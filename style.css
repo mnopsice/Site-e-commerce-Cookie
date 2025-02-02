@@ -29,6 +29,7 @@ header .logo {
 header ul {
     font-family: 'Overlock', sans-serif;
     color: #3F54BE;
+    font-weight: bold;
     font-size: 30px;
     align-items: center;
     list-style: none;
@@ -139,6 +140,7 @@ h1 {
     text-align: left;
     margin-left: 5vh;
     margin-top: 5vh;
+    font-weight: 700;
 }
 
 h2 { 
@@ -148,6 +150,7 @@ h2 {
     text-align: left;
     margin-left: 7vh;
     margin-top: 5vh;
+    font-weight: 700;
 }
 
 hr {
